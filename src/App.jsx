@@ -15,7 +15,9 @@ function App() {
   return (
     <>
       <Navbar />
-      {places}
+      <div className="card-container">
+        {places}
+      </div>
     </>
   )
 }

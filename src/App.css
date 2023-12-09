@@ -1,42 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
 #root {
-  max-width: 1280px;
+  max-width: 550px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  user-select: none;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav {
+  height: 55px;
+  border-radius: 6px 6px 0 0;
+  background: #F55A5A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.nav--logo {
+  width: 24px;
+}
+
+.nav--text {
+  font-size: 0.9rem;
+}
+
+.card-container {
+  padding: 45px 40px;
+  border-radius: 0 0 6px 6px;
+  color: #2B283A;
+  background: white;
 }
 
 .card {
-  padding: 2em;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-.read-the-docs {
-  color: #888;
+.card > img {
+  width: 125px;
+  height: 168px;
+  border-radius: 5px;
+  object-fit: cover;
 }
+
+.card-information-location {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.card-information-place {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.card-information-place > img {
+  width: 8px;
+}
+
+.card-information--location {
+  font-size: 0.6rem;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.10881rem;
+}
+
+.card-information--map {
+  font-size: 0.6rem;
+}
+
+.card-information--map a {
+  color: #918E9B;
+  font-size: 0.6rem;
+  font-weight: 400;
+  text-decoration-line: underline;
+  transition: all 1s ease;
+}
+
+.card-information--map a:hover {
+  color: #2B283A;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+
+.card-information--hero_text {
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.card-information--date {
+  margin-bottom: 8px;
+  font-size: 0.6rem;
+  font-style: normal;
+  line-height: normal;
+}
+
+.card-information--desc {
+  font-size: 0.6rem;
+}
+
+section > hr {
+  margin: 18px 0;
+  border: 1px solid #F5F5F5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
